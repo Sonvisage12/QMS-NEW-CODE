@@ -12,7 +12,7 @@ extern "C" {
 //#include <Preferences.h>
 int number;
 int Number1=0;
-
+Ticker display_ticker;
 //Preferences preferences;
 // Pin Definition for Nodemcu to HUB75 LED MODULE
 #define P_LAT 16  // D0
@@ -22,7 +22,7 @@ int Number1=0;
 #define P_OE 2    // D4
 #define P_D 12    // D6
 #define P_E 0     // GND (no connection)
-Ticker display_ticker;
+
 PxMATRIX display(128, 32, P_LAT, P_OE, P_A, P_B, P_C, P_D);
 
 
